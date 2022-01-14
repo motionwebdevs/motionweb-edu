@@ -1,0 +1,244 @@
+.header{
+  .headerContent {
+    width: 100%;
+    padding: 10px 0;
+
+
+    .headerNav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .right {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 55%;
+
+        .about {
+          color: #17202A;
+          transition: .2s ease;
+          padding-left: 3rem;
+          font-size: 15px;
+
+          h3 {
+            background: transparent;
+            border: 1px solid #17202A;
+            font-size: 16px;
+            letter-spacing: 1px;
+            padding: 10px ;
+            cursor: pointer;
+            transition: .2s ease;
+            border-radius: 15px;
+            font-weight: 400;
+            &:hover {
+              background: #17202A;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.bm-burger-button {
+  position: fixed;
+  display: none;
+  width: 36px;
+  height: 30px;
+  left: 0 !important;
+  top: 0!important;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  margin-right: 30px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+  right: -20px !important;
+  height: 30px !important;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  width: 400px !important;
+  position: fixed;
+  height: 100%;
+  right: 0px !important;
+  top: 0 !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+// Media 1024px
+@media (max-width: 1024px) {
+  .header{
+    .headerContent{
+      .headerNav{
+        .right{
+          margin-left: 45%;
+        }
+        .left{
+          img{
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media 992px
+
+@media (max-width: 992px) {
+  .bm-burger-button {
+    z-index: -1;
+    display: block;
+    width: 50px;
+    height: 30px;
+    position: relative;
+  }
+  .headerNav{
+    .right{
+      .about{
+        display: none;
+      }
+    }
+  }
+
+  .bm-item{
+    h3{
+      color: #ffffff !important;
+      font-size: 34px;
+      padding-left: 30px;
+      font-weight: 400;
+    }
+  }
+  .Burger-menu{
+    .second__content{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 40px;
+      a{
+        font-size: 34px;
+        font-weight: 500;
+        color: white;
+      }
+    }
+    .firstContent{
+      .iconNav{
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        i{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+// Media 576px
+@media (max-width: 576px) {
+  .bm-item h3 {
+    color: #ffffff !important;
+    font-size: 24px;
+    padding-left: 30px;
+    font-weight: 400;
+  }
+}
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .header{
+    .headerContent{
+      .headerNav{
+        .left{
+          img{
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  .bm-burger-button{
+    width: 30px !important;
+  }
+  .bm-item h3 {
+    font-size: 20px;
+  }
+
+  .Burger-menu{
+    .second__content{
+      i{
+        font-size: 26px;
+      }
+    }
+    .firstContent{
+      .iconNav{
+        i{
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+// Media 375px
+
+@media (max-width: 375px) {
+  .bm-menu-wrap {
+    width: 300px !important;
+  }
+}

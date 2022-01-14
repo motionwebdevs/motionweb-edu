@@ -1,0 +1,228 @@
+.contact {
+  margin-top: 5%;
+  padding: 50px;
+  width: 100%;
+
+  .contactContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    .firstContent {
+      width: 50%;
+
+      .contactInput {
+        width: 51%;
+        padding: 10px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #17202A;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 0;
+        color: #17202A;
+      }
+
+      .btn {
+        border: 1px solid #17202A;
+        padding: 10px 24px;
+        color: #ffffff;
+        margin-top: 20px;
+        font-size: 16px;
+        width: 20%;
+        border-radius: 4px;
+        background: rgba(23, 32, 42, 0.53);
+      }
+
+    }
+
+    .secondContent {
+      width: 40%;
+      color: #17202A;
+
+      h3 {
+        font-size: 24px;
+        padding-bottom: 10px;
+        padding-top: 40px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.flag-dropdown {
+  background: #FFFFFFB2 !important;
+  border: 1px solid #17202A !important;
+}
+.form-control {
+  border-bottom: 1px solid #17202A !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  color: #17202A !important;
+}
+
+
+.form-control {
+  padding-left: 40px !important;
+}
+//Media 1024px 
+
+@media (max-width: 1024px) {
+  .contact {
+    .contactContent {
+      .firstContent {
+        .contactInput {
+          width: 62%;
+        }
+      }
+    }
+  }
+}
+
+// Media 992px
+
+@media (max-width: 992px) {
+  .contact {
+    .contactContent {
+      .firstContent {
+        .contactInput {
+          width: 72%;
+        }
+      }
+    }
+  }
+}
+
+// Media 768px
+
+@media (max-width: 992px) {
+  .contact {
+    h1{
+      font-size: 44px;
+    }
+  }
+}
+
+// Media 768px
+
+@media (max-width: 768px) {
+  .contact {
+    .contactContent {
+      .firstContent {
+        .btn {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+
+// Media 576px
+
+@media (max-width: 576px) {
+  .contact {
+    padding: 0;
+    h1{
+      font-size: 34px;
+    }
+    .contactContent{
+      .firstContent {
+        h3 {
+          font-size: 16px;
+        }
+        .btn{
+          font-size: 14px;
+        }
+      }
+      .secondContent {
+        h3 {
+          font-size: 18px;
+          padding-top: 0;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+  .react-tel-input .form-control{
+    width: 200px !important;
+  }
+}
+
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .contact{
+    h1{
+      font-size: 24px;
+    }
+    .contactContent{
+      width: 100%;
+      display: block;
+      position: relative;
+      .firstContent{
+        position: absolute;
+        width: 100%;
+        margin-top: 35%;
+        h3{
+          font-size: 15px;
+        }
+      }
+      .secondContent{
+        width: 100%;
+        margin-bottom: 100%;
+      }
+    }
+  }
+  .react-tel-input .form-control{
+    width: 260px !important;
+  }
+}
+
+// Media 375px
+
+@media (max-width: 375px) {
+  .contact{
+    h1{
+      font-size: 24px;
+    }
+    .contactContent{
+      width: 100%;
+      display: block;
+      position: relative;
+      .firstContent{
+        position: absolute;
+        width: 100%;
+        margin-top: 50%;
+        h3{
+          font-size: 15px;
+        }
+        .btn{
+          font-size: 11px;
+          border-radius: 2px;
+          width: 30%;
+        }
+      }
+      .secondContent{
+        width: 100%;
+        margin-bottom: 110%;
+      }
+    }
+  }
+  .react-tel-input .form-control{
+    width: 230px !important;
+  }
+}

@@ -1,0 +1,72 @@
+.MWebDiplomaProject {
+  margin-top: 8%;
+
+  .content {
+    .first_content {
+      h2 {
+        font-size: 30px;
+      }
+
+      h3 {
+        margin-top: 10px;
+        font-size: 22px;
+        font-weight: 500;
+        padding-top: 10px;
+      }
+    }
+
+    .second_content {
+      width: 60%;
+      margin-top: 5rem;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        padding-top: 10px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Media 576px
+
+@media (max-width: 576px) {
+  .MWebDiplomaProject{
+    .content{
+      .second_content{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .MWebDiplomaProject{
+    .content{
+      .first_content{
+        h1{
+          font-size: 30px;
+        }
+        h2{
+          font-size: 25px;
+        }
+      }
+      .second_content {
+        margin-top: 50px;
+        h2{
+          font-size: 25px;
+        }
+        p{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.FullStackLearn{
+  margin-top: 8%;
+  .FullStackLearnContent{
+    .content {
+      width: 60%;
+      span{
+        padding: 8px 12px;
+        background: #17202A;
+        border-radius: 50%;
+        font-size: 12px;
+        color: white;
+      }
+      h2{
+        margin: 10px 0;
+      }
+      p{
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+//   Media 576px
+
+@media (max-width: 576px) {
+  .FullStackLearn {
+    h1{
+      font-size: 40px;
+    }
+    .FullStackLearnContent {
+      .content {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+//   Media 414px
+
+@media (max-width: 414px) {
+  .FullStackLearn {
+    h1{
+      font-size: 30px;
+    }
+    .FullStackLearnContent {
+      .content {
+        span{
+          padding: 5px 8px;
+        }
+        h2{
+          font-size: 18px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Media 375px
+
+@media (max-width: 375px) {
+  .FullStackLearn h1 {
+   margin: 20px 0;
+  }
+}

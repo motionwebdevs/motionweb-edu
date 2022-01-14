@@ -1,0 +1,102 @@
+.MotionWebMentors{
+  h1{
+    margin-bottom: 4rem;
+  }
+  .content{
+    .item{
+      display: flex;
+      width: 60%;
+      img{
+        width: 250px;
+      }
+      .itemText{
+        padding-left: 10px;
+        h2{
+          font-size: 26px;
+        }
+        .span{
+          line-height: 1.3rem;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Media 768px
+
+@media (max-width: 768px) {
+  .MotionWebMentors {
+    .content {
+      .item {
+        width: 80%;
+      }
+    }
+  }
+}
+
+
+// Media 576px
+
+@media (max-width: 576px) {
+  .MotionWebMentors {
+    .content {
+      .item {
+        width: 300px;
+        display: block;
+        margin-left: 23%;
+        .itemText{
+          h2{
+            font-size: 24px;
+          }
+        }
+        img{
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .MotionWebMentors {
+    .content {
+      .item {
+        width: 220px;
+        display: block;
+        margin-left: 20%;
+        .itemText{
+          padding-left: 0;
+          h2{
+            font-size: 18px;
+          }
+          .span{
+            font-size: 14px;
+          }
+        }
+        img{
+          width: 220px;
+        }
+      }
+    }
+  }
+}
+
+// Media 375px
+
+@media (max-width: 375px) {
+  .MotionDesign {
+    h1 {
+      margin: 20px 0;
+    }
+
+    .content {
+      .item {
+        margin-left: 15%;
+      }
+    }
+  }
+}

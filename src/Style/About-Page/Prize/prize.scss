@@ -1,0 +1,88 @@
+.prize{
+  margin-top: 8%;
+  background-image: url("../../../components/img/doc_bg.png") no-repeat center/40px;
+  .prizeContent{
+    position: relative;
+    p{
+      padding-bottom: 40px;
+      text-align: center;
+    }
+    .img2{
+      margin-left: 25%;
+      z-index: -1;
+      margin-bottom: 7rem;
+    }
+    .img1{
+      position: absolute;
+      z-index: 1;
+      margin-top: 20%;
+    }
+  }
+}
+
+//Media 1024px 
+@media (max-width: 1024px) {
+  .prize {
+    .prizeContent {
+      .img2 {
+        margin-left: 10%;
+      }
+    }
+  }
+}
+
+//Media 992px
+@media (max-width: 992px ) {
+  .prize {
+    .prizeContent {
+      .img2 {
+        width: 60%;
+        margin-left: 25%;
+      }
+      .img1 {
+        width: 40%;
+        margin-top: 20%;
+        margin-left: 10%;
+      }
+    }
+  }
+
+}
+
+
+// Media 992px
+
+@media (max-width: 992px ) {
+  .prize {
+    .prizeContent {
+     h1{
+       font-size: 44px;
+     }
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+
+
+// Media 414px
+
+
+@media (max-width: 414px ) {
+  .prize {
+    .prizeContent {
+      h1{
+        font-size: 30px;
+        margin: 20px 0;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+
+

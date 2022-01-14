@@ -1,0 +1,133 @@
+.aboutHero {
+  background: url("../../components/img/about__bg.png") no-repeat center/cover;
+  height: 220vh;
+
+  .aboutPageContent {
+    .firstContent {
+      display: flex;
+      padding-top: 8%;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-top: 30px;
+
+        span {
+          font-size: 24px;
+          font-weight: 500;
+          padding-bottom: 20px;
+        }
+
+        h2 {
+          font-size: 40px;
+        }
+      }
+
+      img {
+        width: 550px;
+      }
+    }
+
+    .secondContent {
+      text-align: center;
+      color: white;
+      margin-top: 20%;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 40px;
+
+        h2 {
+          font-size: 44px;
+          padding-bottom: 20px;
+        }
+      }
+
+    }
+  }
+}
+
+// Media 1024px
+@media (max-width: 1024px) {
+  .aboutHero {
+    background: url("../../components/img/about__bg-1200.png") no-repeat center/cover;
+    height: 140vh;
+  }
+}
+
+// Media 992px
+@media (max-width: 992px) {
+  .aboutHero {
+    background: url("../../components/img/about__bg-992.png") no-repeat center/cover;
+    height: 140vh;
+  }
+}
+
+// Media 768px
+@media (max-width: 768px) {
+  .aboutHero {
+    background: url("../../components/img/about__bg-768.png") no-repeat center/cover;
+    height: 200vh;
+    .aboutPageContent {
+      .firstContent {
+        display: block;
+        .text {
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media 576 px
+
+@media (max-width: 576px) {
+  .aboutHero {
+    background: url("../../components/img/about__bg-576.png") no-repeat center/cover;
+    height: 200vh;
+    .aboutPageContent {
+      .firstContent {
+        img {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+// media 414px
+
+@media (max-width: 414px) {
+  .aboutHero {
+    background: url("../../components/img/about__bg-414.png") no-repeat center/cover;
+    height: 220vh;
+    .aboutPageContent {
+      .firstContent {
+        img {
+          width: 300px;
+        }
+      }
+      .secondContent{
+        span {
+          font-size: 24px;
+          h2 {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// media 375px
+
+@media (max-width: 375px) {
+  .aboutHero {
+    background: url("../../components/img/about__bg-320.png") no-repeat center/cover;
+    height: 200vh;
+  }
+}

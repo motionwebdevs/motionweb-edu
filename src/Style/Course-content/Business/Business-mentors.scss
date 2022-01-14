@@ -1,0 +1,125 @@
+.BusinessMentors {
+  h1 {
+    margin-bottom: 4rem;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+      display: flex;
+      width: 50%;
+
+      img {
+        width: 250px;
+      }
+
+      .itemText {
+        padding-left: 10px;
+
+        h2 {
+          font-size: 24px;
+        }
+
+        .span {
+          line-height: 1.3rem;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+// Media 992px
+
+@media (max-width: 992px) {
+  .BusinessMentors {
+    .content {
+      display: flex;
+      justify-content: space-around;
+
+      .item {
+        width: 300px;
+        display: block;
+
+        img {
+          width: 300px;
+        }
+
+        .itemText {
+          padding-left: 0;
+
+          .span {
+
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media 576px
+
+@media (max-width: 576px) {
+  .BusinessMentors {
+    .content {
+      display: block;
+
+      .item {
+        margin-left: 23%;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .BusinessMentors {
+    .content {
+      .item {
+        width: 220px;
+        margin-left: 4.5rem;
+
+        img {
+          width: 220px;
+        }
+
+        .itemText {
+          padding-left: 0;
+
+          h2 {
+            font-size: 18px;
+          }
+
+          .span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media 375px
+
+@media (max-width: 375px) {
+  .BusinessMentors {
+    h1 {
+      margin: 20px 0;
+    }
+
+    .content {
+      .item {
+        margin-left: 15%;
+      }
+    }
+  }
+}

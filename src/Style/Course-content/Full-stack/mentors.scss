@@ -1,0 +1,131 @@
+.mentors {
+  margin-top: 8%;
+  .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    span{
+      font-size: 18px;
+    }
+  }
+  .mentorsContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .mentorsItem {
+      margin-top: 40px;
+      width: 250px;
+      height: 350px;
+      img {
+        width: 250px;
+      }
+
+      .text {
+        padding: 0 10px;
+
+        h2 {
+          padding-top: 10px;
+          font-size: 19px;
+          font-weight: 500;
+          color: #17202A;
+          padding-bottom: 10px;
+        }
+
+        span {
+          color: #17202A;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Media 768px
+
+@media (max-width: 768px) {
+  .mentors {
+    width: 100%;
+    .mentorsContent {
+      display: grid;
+      grid-template-columns: 40% 40%;
+      .mentorsItem{
+        .text {
+          text-align: start;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+// media 576px
+
+@media(max-width: 576px) {
+  .mentors{
+    h1{
+      font-size: 40px;
+    }
+    .mentorsContent {
+      display: grid;
+      grid-template-columns: 1fr;
+      .mentorsItem{
+        margin-left: 27%;
+      }
+    }
+  }
+}
+
+
+// media 414px
+
+@media(max-width: 414px) {
+  .mentors{
+    .text{
+      h1{
+        font-size: 30px;
+      }
+      span{
+        font-size: 14px;
+      }
+    }
+    .mentorsContent {
+      .mentorsItem{
+        width: 220px;
+        margin-left: 20%;
+        .itemText{
+          h2{
+            font-size: 18px;
+          }
+          span{
+            font-size: 14px;
+          }
+        }
+        img{
+          width: 220px;
+        }
+      }
+    }
+  }
+}
+
+// Media 375px
+
+
+@media (max-width: 375px) {
+  .mentors {
+    .text {
+      h1 {
+        margin: 20px 0;
+      }
+      span{
+        padding-top: 10px;
+      }
+    }
+    .mentorsContent {
+      .mentorsItem {
+        width: 220px;
+        margin-left: 15%;
+      }
+    }
+  }
+}

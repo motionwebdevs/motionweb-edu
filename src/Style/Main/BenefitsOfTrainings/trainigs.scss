@@ -1,0 +1,87 @@
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+.trainings {
+  margin-top: 8%;
+  .trainingsContent {
+    .boxes{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .box{
+        margin: 10px;
+        padding: 20px;
+        border-radius: 4px;
+        .icon{
+          display: flex;
+          align-items: center;
+          span{
+            font-size: 20px;
+            font-weight: 600;
+            color: #17202A;
+            margin-left: 5px;
+          }
+          i{
+            font-size: 24px;
+            color: #17202A;
+          }
+        }
+        p{
+          color: #17202A;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+// Media 992px
+
+@media (max-width: 992px) {
+  .trainings{
+    .trainingsContent{
+      h1{
+        font-size: 44px;
+      }
+      .boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+// Media 576px
+
+@media (max-width: 576px) {
+  .trainings{
+    .trainingsContent{
+      h1{
+        font-size: 35px;
+      }
+      .boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .trainings{
+    .trainingsContent{
+      h1{
+        font-size: 24px;
+      }
+      .boxes{
+        display: block;
+      }
+    }
+  }
+}

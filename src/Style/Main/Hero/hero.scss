@@ -1,0 +1,437 @@
+.hero {
+  .heroContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .firsContent {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+      h2 {
+        font-size: 55px;
+        font-weight: 900;
+        color: red;
+      }
+
+      p {
+        color: #17202A;
+        font-size: 18px;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 55px;
+        font-weight: 900;
+        color: #17202A;
+
+        span {
+          font-size: 44px;
+          font-weight: 700;
+          color: #17202A;
+        }
+      }
+
+      button {
+        width: 40%;
+        border: none;
+        background: #17202A;
+        color: white;
+        padding: 10px 24px;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-top: 50px;
+      }
+    }
+
+    .secondContent {
+      width: 50%;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.modal__contact {
+  margin: 80px;
+
+  .modal__input {
+    margin-top: 20px;
+
+    input {
+      width: 300px;
+      padding: 10px;
+      background: none;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      color: white;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+  }
+
+  button {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: .2s ease;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid crimson;
+      color: crimson;
+    }
+  }
+}
+
+.ReactModal__Content {
+  background: #373a47 !important;
+  height: 70% !important;
+}
+
+.react-tel-input {
+  width: 300px !important;
+  border-radius: 4px;
+  border: 1px solid #ffffff !important;
+}
+
+.modal__btn {
+  padding: 10px 20px;
+  background: #1f1e28;
+  border-radius: 5px;
+  border: 1px solid #17202A;
+  color: #17202A;
+  transition: .2s ease;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.closeIcon {
+  width: 30px;
+  margin-left: 92%;
+  font-size: 24px;
+  color: white;
+}
+
+.flag-dropdown {
+  background: #FFFFFFB2 !important;
+  border: none !important;
+}
+
+.form-control {
+  padding-left: 40px !important;
+  color: rgba(23, 32, 42, 0.4) !important;
+}
+
+
+
+// Media 1024px
+
+@media (max-width: 1024px) {
+  .hero {
+    .heroContent {
+      .firsContent {
+        h2 {
+          font-size: 45px;
+        }
+
+        span {
+          font-size: 40px;
+
+          span {
+            font-size: 35px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        button {
+          width: 50%;
+          font-size: 16px;
+          padding: 12px 12px;
+        }
+      }
+    }
+  }
+
+  .modal__contact {
+    margin-left: 20%;
+    .modal__input {
+      input {
+        width: 80%;
+        padding: 20px;
+      }
+    }
+
+    button {
+      width: 80%;
+      margin-top: 20px;
+      padding: 20px;
+    }
+  }
+
+  .react-tel-input {
+    width: 80% !important;
+    padding: 10px !important;
+  }
+
+  .ReactModal__Content {
+    width: 60% !important;
+    height: 60%;
+  }
+}
+
+// Media 992px
+
+@media (max-width: 992px) {
+  .hero {
+    .heroContent {
+      .firsContent h2 {
+        font-size: 39px;
+      }
+
+      .secondContent {
+        img {
+          width: 60%;
+          margin-left: 7rem;
+        }
+      }
+    }
+  }
+}
+
+
+// Media 768px
+
+@media (max-width: 768px) {
+  .hero {
+    .heroContent {
+      .firsContent {
+        width: 50%;
+
+        h2 {
+          font-size: 34px;
+          padding-top: 20px;
+        }
+
+        span span {
+          font-size: 28px;
+        }
+
+        span {
+          font-size: 32px;
+        }
+      }
+
+      .secondContent {
+        width: 40%;
+
+        img {
+          width: 70%;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+
+  .modal__contact {
+    margin-top: 50px;
+    margin-left: 15%;
+    .modal__input {
+      input {
+        width: 380px;
+        padding: 15px;
+      }
+    }
+
+    button {
+      width: 380px;
+      padding: 15px;
+    }
+  }
+
+  .react-tel-input {
+    width: 380px !important;
+  }
+
+  .ReactModal__Content {
+    width: 80% !important;
+    height: 70% !important;
+  }
+
+}
+
+// Media 576px
+
+@media (max-width: 576px) {
+  .hero {
+    .heroContent {
+      .firsContent {
+        width: 50%;
+
+        h2 {
+          font-size: 30px;
+          padding-top: 20px;
+        }
+
+        span span {
+          font-size: 25px;
+        }
+
+        span {
+          font-size: 30px;
+        }
+      }
+
+      .secondContent {
+        width: 40%;
+
+        img {
+          width: 70%;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+
+  .modal__contact {
+    margin-top: 50px;
+    margin-left: 20%;
+    .modal__input {
+      input {
+        width: 270px;
+      }
+    }
+
+    button {
+      width: 270px;
+    }
+  }
+
+  .react-tel-input {
+    width: 270px !important;
+  }
+
+  .ReactModal__Content {
+    width: 70% !important;
+    height: 60%;
+  }
+}
+
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .hero {
+    .heroContent {
+      width: 100%;
+
+      .firsContent {
+        width: 90%;
+
+        p {
+          font-size: 14px;
+        }
+
+        button {
+          font-size: 14px;
+          padding: 10px;
+          width: 120px;
+          margin-top: 10px;
+        }
+      }
+
+      .secondContent {
+        width: 10%;
+        display: none;
+      }
+    }
+  }
+
+  .modal__contact {
+    margin: 5px;
+    .modal__input {
+      input {
+        width: 267px;
+        padding: 10px;
+      }
+    }
+
+    button {
+      width: 268px;
+      padding: 10px;
+    }
+  }
+  .react-tel-input {
+    padding: 0 !important;
+    .form-control {
+      width: 235px !important;
+    }
+  }
+
+  .ReactModal__Content {
+    width: 75% !important;
+    height: 70% !important;
+  }
+}
+
+// Media 375px
+
+@media (max-width: 375px) {
+  .modal__contact {
+    margin: 5px;
+    .modal__input {
+      input {
+        width: 254px;
+      }
+    }
+
+    button {
+      width: 254px;
+    }
+  }
+
+  .react-tel-input {
+    width: 250px !important;
+  }
+
+  .ReactModal__Content {
+    width: 80% !important;
+    height: 60% !important;
+  }
+
+  .react-tel-input {
+    width: 254px !important;
+  }
+
+  .hero {
+    .heroContent {
+      .firsContent button {
+        font-size: 10px;
+        padding: 10px;
+        width: 100px;
+        border-radius: 2px;
+      }
+    }
+  }
+}

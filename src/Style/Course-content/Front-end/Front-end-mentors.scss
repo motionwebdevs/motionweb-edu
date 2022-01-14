@@ -1,0 +1,156 @@
+.FrontEndMentors {
+  margin-top: 8%;
+  .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+      display: flex;
+      margin-top: 20px;
+      img {
+        width: 250px;
+      }
+
+      .itemText {
+        padding-left: 10px;
+
+        h2 {
+          font-size: 24px;
+          padding-bottom: 10px;
+        }
+
+        span {
+          line-height: 1.3rem;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Media-1024px
+@media (max-width: 1024px) {
+  .FrontEndMentors {
+    .content {
+      .item {
+        img{
+          width: 200px;
+        }
+        .itemText{
+          width: 250px;
+          h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media 992px
+@media (max-width: 992px) {
+  .FrontEndMentors {
+    .content {
+      .item {
+        width: 250px;
+        display: block;
+        margin-left: 5rem;
+        img{
+          width: 250px;
+        }
+        .itemText{
+          padding-left: 0;
+          h2{
+            font-size: 21px;
+          }
+          span{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// Media 768px
+
+@media (max-width: 768px) {
+  .FrontEndMentors {
+    .content {
+      .item {
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+// Media 576px
+
+@media (max-width: 576px) {
+  .FrontEndMentors{
+    h1{
+      font-size: 40px;
+    }
+    .content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      .item{
+        width: 300px;
+        margin-left: 22%;
+        img{
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+// Media 414px
+
+@media (max-width: 414px) {
+  .FrontEndMentors{
+    h1{
+      font-size: 30px;
+    }
+    .content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      .item{
+        width: 220px;
+        margin-left: 20%;
+        .itemText{
+          h2{
+            font-size: 18px;
+          }
+          span{
+            font-size: 14px;
+          }
+        }
+        img{
+          width: 220px;
+        }
+      }
+    }
+  }
+}
+
+// Media 375px
+
+@media (max-width: 375px) {
+  .FrontEndMentors {
+    h1 {
+      margin: 20px 0;
+    }
+    .content .item {
+      margin-left: 16%;
+    }
+  }
+}
